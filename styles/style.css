@@ -1,0 +1,66 @@
+body{
+    height:100vh;
+}
+
+.gridbox{
+    height:100vh;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color:yellow;
+    grid-gap:24px;
+    padding:24px; /* adding padding made a vertical scrollbar appear because the padding made the gridbox larger than the body element even though both have height 100vh, so i set box-sizing:border-box; to make the padding included in the total height value*/
+    box-sizing:border-box;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 4fr 3fr 1fr;
+}
+
+.element{
+    background-color:blue; /* having blue background color on the unfinished elements helps me debug.*/
+}
+
+.r1e1{
+    display:grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap:24px;
+    background-color:yellow;
+
+}
+
+.nested{
+    background-color:pink;
+}
+
+.r1e3{
+    display:grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap:24px;
+    background-color:yellow;
+
+}
+
+.r2e2{
+    display:grid;
+    grid-gap:24px;
+    grid-template-columns: 1fr 2fr;
+    background-color:yellow;
+
+}
+
+.small{
+    display:grid;
+    grid-gap:24px;
+    grid-template-rows: repeat(2, 1fr);
+    background-color:yellow;
+
+}
+
+.big{
+    
+}
+
+
+
+.r3{
+    background-color:#9BC1BC;
+    
+}
