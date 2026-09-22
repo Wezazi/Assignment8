@@ -10,9 +10,22 @@ body{
     grid-gap:24px;
     padding:24px; /* adding padding made a vertical scrollbar appear because the padding made the gridbox larger than the body element even though both have height 100vh, so i set box-sizing:border-box; to make the padding included in the total height value*/
     box-sizing:border-box;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: 4fr 3fr 1fr;
 }
+
+.row1{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap:24px;
+}
+
+.row2{
+    display:grid;
+    grid-template-columns: 2fr 3fr 1fr;
+    grid-gap:24px;
+}
+
 
 .element{
     background-color:blue; /* having blue background color on the unfinished elements helps me debug.*/
@@ -40,8 +53,8 @@ body{
 
 .r2e2{
     display:grid;
-    grid-gap:24px;
     grid-template-columns: 1fr 2fr;
+    grid-gap:24px;
     background-color:yellow;
 
 }
@@ -51,11 +64,6 @@ body{
     grid-gap:24px;
     grid-template-rows: repeat(2, 1fr);
     background-color:yellow;
-
-}
-
-.big{
-    
 }
 
 
