@@ -66,9 +66,18 @@ body{
     background-color:yellow;
 }
 
-
-
 .r3{
     background-color:#9BC1BC;
     
+}
+
+
+.r3{
+    /*We can make it ignore the gridbox padding by setting the same value in negative as element margin */
+    margin-left:-24px;
+    margin-right:-24px;
+    margin-bottom:-24px;
+
+    align-content: center;
+    padding:24px;
 }
